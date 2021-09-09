@@ -3,9 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, CardActions } from '@material-ui/core';
-
-//31:29
+import Image from './assets/lab.png'
+import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, CardActions, Divider } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -24,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     color: "#fff",
     fontSize: "4rem",
+    [theme.breakpoints.down("sm")]:{
+      height: 300,
+      fontSize: "3em"
+    }
   },
   blogsContainer: {
     paddingTop: theme.spacing(3),
@@ -34,17 +37,31 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(3),
     textAlign: "center"
   },
+  blogText: {
+    fontWeight: 500,
+    paddingBottom: theme.spacing(6),
+    paddingTop: theme.spacing(6),
+    textAlign: "center"
+  },
   card: {
     maxWidth: "100%",
-    textAlign: "justify"
+    textAlign: "justify",
   },
   media: {
-    height: 240
+    height: 240,
+  },
+  mediaLab: {
+    height: 440,
   },
   cardActions: {
     display: "flex",
     margin: "0 10px",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+  },
+  textMylab: {
+    fontSize: "3em",
+    textAlign: "center",
+    padding: theme.spacing(5),
   }
 }));
 
@@ -56,7 +73,7 @@ function App() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
           <Typography variant="h5" color="primary" >
-            MyLab
+            DevCompilers
           </Typography>
         </Toolbar>
       </AppBar>
@@ -129,6 +146,36 @@ function App() {
               </CardActionArea>
               {/* <CardActions className={classes.cardActions}>
               </CardActions> */}
+            </Card>
+          </Grid>
+        </Grid>
+        <Typography variant="h3" className={classes.blogText} >
+          Nosso principal serviço
+        </Typography>
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} md={6}>
+            <Card className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.mediaLab}
+                  // image="https://coderhamilton.github.io/DevCompilers/assets/lab.png"
+                  image={Image}
+                  title="Lab"
+                />
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} container>
+            <Card className={classes.card}>
+              <CardContent>
+                <Typography className={classes.textMylab} gutterBottom variant="h4" component="h2">
+                  MyLab
+                  <Divider />
+                </Typography>
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  O sistema de Apoio e Gerenciamento para Laboratórios (MyLab) - É uma solução tecnológica para proprietáritos e usuários de laboratórios de escolas, universidades e faculdades.
+                </Typography>
+              </CardContent>
             </Card>
           </Grid>
         </Grid>
