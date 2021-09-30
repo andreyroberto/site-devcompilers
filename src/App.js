@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Image from './assets/lab.png'
 import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, CardActions, Divider } from '@material-ui/core';
+import Footer from './footer';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -179,6 +180,9 @@ function App() {
             </Card>
           </Grid>
         </Grid>
+        <Box pt={5}>
+          <Footer />
+        </Box>
       </Container>
     </div>
   );
