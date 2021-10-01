@@ -32,25 +32,26 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   footer: {
+    border: '1px solid red',
+    minWidth: '100%',
+    marginBottom: '50px',
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
   },
   social: {
-    width: "48px",
-    height: "48px",
-    padding: "12px 0",
-    border: "2px solid #fff",
-    color: "#fff",
-    borderRadius: "50%",
+
+
+
+
   },
 
   //   social:hover: {
   //     color: "#608dfd",
   //     background: "#fff",
   //   },
-  
+
   props: {
     // Name of the component ⚛️
     MuiButtonBase: {
@@ -76,14 +77,24 @@ export default function Footer() {
         </Typography>
         <Typography variant="body1">Sticky footer placeholder.</Typography>
       </Container>
-      <footer className={classes.footer}>
+
+
+      <footer className="rodape"  >
         <Container maxWidth="sm">
           <Link rel="stylesheet" href="https://github.com/CoderHamilton/MyLab">
-            <GitHubIcon className={classes.social} default props />
+            
+            <div className="git">
+            <GitHubIcon default props />
+            </div>
           </Link>
-          <Copyright />
-        </Container>
-      </footer>
-    </div>
+
+          <div className="copyright">
+            <Copyright />
+          </div>
+       
+
+      </Container>
+    </footer>
+    </div >
   );
 }
