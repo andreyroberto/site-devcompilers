@@ -41,17 +41,14 @@
 
 
 .rodape{
- border:1px solid red;
- min-width: 100%;
+  border:1px solid red;
+  min-width: 100%;
   width: 48px;
   height: 48px;
   padding: 12px 0;
   color: black;
-  
-  
   margin-bottom: 50px;
   display: flex;
-
   margin: 0 auto;
 }
 
@@ -61,11 +58,10 @@
   margin-bottom: 50px;
   padding: 20px;
   text-align: center;
-  
 }
 
- .git{
-   border: 2px solid black;
+.git{
+  border: 2px solid black;
   border-radius: 50%;
   color:black;
   margin-left: 30px;
@@ -78,9 +74,8 @@
 }
 
 .git:hover{
-   
   color: white;
   background: blue;
   border:2px solid blue;
-  transition: all 600ms;
+  transition: all 30F0ms ease-in-out;
 }

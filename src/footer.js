@@ -82,19 +82,18 @@ export default function Footer() {
       <footer className="rodape"  >
         <Container maxWidth="sm">
           <Link rel="stylesheet" href="https://github.com/CoderHamilton/MyLab">
-            
+
             <div className="git">
-            <GitHubIcon default props />
+              <GitHubIcon default props />
             </div>
           </Link>
 
           <div className="copyright">
             <Copyright />
           </div>
-       
 
-      </Container>
-    </footer>
+        </Container>
+      </footer>
     </div >
   );
 }

@@ -1,22 +1,18 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Image from './assets/lab.png'
-import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, Divider, Zoom, useScrollTrigger, CssBaseline, Fab, Slide, IconButton, Link, Breadcrumbs, Tab, Tabs } from '@material-ui/core';
+import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, Divider, Zoom, useScrollTrigger, CssBaseline, Fab, ThemeProvider } from '@material-ui/core';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import MenuIcon from '@material-ui/icons/Menu';
 import PropTypes from 'prop-types';
+
 import Footer from './footer';
+import NavBar from './NavBar';
+import theme from './theme';
 
 const useStyles = makeStyles((theme) => ({
-  appBar: {
-    backgroundColor: "#4482FF"
-  },
   hero: {
-    // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')`,
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media-exp1.licdn.com/dms/image/C4E16AQFyL14FnPKs5w/profile-displaybackgroundimage-shrink_350_1400/0/1629848461767?e=1636588800&v=beta&t=k8C_rS-Z_8qYPvknft-pOKZpmFl3gNXdgf7opjSt62w')`,
     height: "500px",
     backgroundPosition: "center",
@@ -131,133 +127,16 @@ ScrollTop.propTypes = {
 
 //fim da rolagem
 
-//appbar semifixo
-function HideOnScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
-
-HideOnScroll.propTypes = {
-  children: PropTypes.element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
-
-//fim appbar semifixo
-
-//navbar click
-function handleClick(event) {
-  event.preventDefault();
-}
-//fim navbar click
-
-//appbar itens
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
-
-//fim appbar itens
-
 function App(props) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <div className="App">
-      <React.Fragment>
-        <CssBaseline />
-        <HideOnScroll {...props}>
-          <AppBar className={classes.appBar} position="sticky">
-            <Toolbar>
-              <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                <MenuIcon />
-              </IconButton>
-              <Typography variant="h5" color="#fff" >
-                DevCompilers
-              </Typography>
 
-              <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                <Tab label="Home" {...a11yProps(0)} />
-                <Tab label="Serviços" {...a11yProps(1)} />
-                <Tab label="Sobre" {...a11yProps(2)} />
-                <Tab label="Contato" {...a11yProps(3)} />
-              </Tabs>
-            
-              <TabPanel value={value} index={0}>
-                Item One
-              </TabPanel>
+      <ThemeProvider theme={theme}>
+        <NavBar />
+      </ThemeProvider>
 
-              {/* <div >
-                <Breadcrumbs className={classes.navegacao} aria-label="breadcrumb">
-                  <Link color="inherit" href="#" onClick={handleClick}>
-                    Home
-                  </Link>
-                  <Link color="inherit" href="#" onClick={handleClick}>
-                    Serviços
-                  </Link>
-                  <Link color="inherit" href="#" onClick={handleClick}>
-                    Sobre
-                  </Link>
-                  <Link color="inherit" href="#" onClick={handleClick}>
-                    Contato
-                  </Link>
-                </Breadcrumbs>
-              </div> */}
-
-              {/* <Typography>Home</Typography> 
-              <Typography>Serviços</Typography>
-              <Typography>Sobre</Typography>
-              <Typography>Contato</Typography> */}
-            </Toolbar>
-          </AppBar>
-        </HideOnScroll>
-      </React.Fragment>
       <Box className={classes.hero} id="back-to-top-anchor">
         <Box>Dev Compilers</Box>
       </Box>
@@ -339,7 +218,6 @@ function App(props) {
               <CardActionArea>
                 <CardMedia
                   className={classes.mediaLab}
-                  // image="https://coderhamilton.github.io/DevCompilers/assets/lab.png"
                   image={Image}
                   title="Lab"
                 />
@@ -360,6 +238,7 @@ function App(props) {
             </Card>
           </Grid>
         </Grid>
+
         <Box pt={5} id="footer">
           <Footer />
         </Box>
@@ -367,7 +246,7 @@ function App(props) {
         <React.Fragment>
           <CssBaseline />
           <ScrollTop {...props}>
-            <Fab color="primary" size="small" aria-label="scroll back to top">
+            <Fab color="secondary" size="small" aria-label="scroll back to top">
               <KeyboardArrowUpIcon />
             </Fab>
           </ScrollTop>
