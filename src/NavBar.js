@@ -50,6 +50,13 @@ export default function NavBar(props) {
       anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
+  const handleClickServicos = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector('#servicos');
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
   const handleClickFooter = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector('#footer');
 
@@ -78,7 +85,7 @@ export default function NavBar(props) {
                 <div>
                   <Tabs onChange={handleClickTab} indicatorColor='secondary' value={value}>
                     <Tab disableRipple onClick={handleClickHome} label='Home' />
-                    <Tab disableRipple label='Serviços' />
+                    <Tab disableRipple onClick={handleClickServicos} label='Serviços' />
                     <Tab disableRipple label='Sobre' />
                     <Tab disableRipple onClick={handleClickFooter} label='Contato' />
                   </Tabs>

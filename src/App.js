@@ -209,10 +209,10 @@ function App(props) {
             </Card>
           </Grid>
         </Grid>
-        <Typography variant="h3" className={classes.blogText} >
+        <Typography variant="h3" className={classes.blogText}>
           Nosso principal serviço
         </Typography>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} id="servicos">
           <Grid item xs={12} sm={6} md={6}>
             <Card className={classes.card}>
               <CardActionArea>
@@ -232,7 +232,13 @@ function App(props) {
                   <Divider />
                 </Typography>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                  O sistema de Apoio e Gerenciamento para Laboratórios (MyLab) - É uma solução tecnológica para proprietáritos e usuários de laboratórios de escolas, universidades e faculdades.
+                  O sistema de Apoio e Gerenciamento para Laboratórios (MyLab) - É uma solução tecnológica para proprietários e usuários de laboratórios de escolas, universidades e faculdades.
+                </Typography>
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  Trata-se de uma aplicação capaz de fornecer eficiência no controle para reserva dos laboratórios, onde é possível selecionar datas, horários, e os laboratórios disponíveis para reservar, assim como e visualizar laboratórios que com status de indisponível ou alocado.
+                </Typography>
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                  O MyLab é uma plataforma web e mobile que disponibiliza um calendário para agendamento de laboratórios. Esta plataforma tem o intuito de facilitar e organizar a reserva de laboratórios da instituição.
                 </Typography>
               </CardContent>
             </Card>

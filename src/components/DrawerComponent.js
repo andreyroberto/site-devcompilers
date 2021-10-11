@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles(theme => ({
   menuIconContainer: {
-    marginLeft: '150px',
+
   },
 }))
 
@@ -51,7 +51,7 @@ const DrawerComponent = () => {
         </List>
       </Drawer>
 
-      <IconButton className={classes.menuIconContainer} onClick={()=>setOpenDrawer(!openDrawer)}>
+      <IconButton className={classes.menuIconContainer} onClick={()=>setOpenDrawer(!openDrawer)} disableRipple={true} edge="end" >
         <MenuIcon />
       </IconButton>
 
