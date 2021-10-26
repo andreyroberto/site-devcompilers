@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Image from './assets/lab.png'
-import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, Divider, Zoom, useScrollTrigger, CssBaseline, Fab, ThemeProvider } from '@material-ui/core';
+import { Zoom, useScrollTrigger, CssBaseline, Fab } from '@material-ui/core';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -12,7 +10,6 @@ import Home from './components/home/Home';
 import Servicos from './components/servicos/Servicos';
 import Sobre from './components/sobre/Sobre';
 import Navbar2 from './components/navbar/Navbar2';
-import Footer from './components/footer/Footer';
 import Banner from './components/banner/banner';
 import Explorar from './components/explorar/Explorar';
 import Objetivos from './components/objetivos/Objetivos';
@@ -131,7 +128,7 @@ ScrollTop.propTypes = {
 //fim da rolagem
 
 function App(props) {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <div className="App">
