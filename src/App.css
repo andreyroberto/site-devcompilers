@@ -41,6 +41,7 @@
 
 
 .rodape{
+  border:1px solid red;
   min-width: 100%;
   width: 48px;
   height: 48px;
@@ -52,12 +53,15 @@
 }
 
 .copyright{
+  border: 1px solid red;
+  margin: 50px;
+  margin-bottom: 50px;
   padding: 20px;
   text-align: center;
 }
 
 .git{
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   color:black;
   margin-left: 30px;
@@ -71,7 +75,7 @@
 
 .git:hover{
   color: white;
-  background: #305BB2;
-  border:1px solid #305BB2;
-  transition: all 300ms ease-in-out;
+  background: blue;
+  border:2px solid blue;
+  transition: all 30F0ms ease-in-out;
 }

@@ -25,12 +25,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    // minHeight: '100vh',
   },
   main: {
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(1),
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(2),
   },
   footer: {
+    border: '1px solid red',
     minWidth: '100%',
     marginBottom: '50px',
     padding: theme.spacing(3, 2),
@@ -38,9 +40,23 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
   },
+  social: {
+
+
+
+
+  },
+
+  //   social:hover: {
+  //     color: "#608dfd",
+  //     background: "#fff",
+  //   },
+
   props: {
+    // Name of the component ⚛️
     MuiButtonBase: {
-      disableRipple: true,
+      // The default props to change
+      disableRipple: true, // No more ripple, on the whole application 💣!
     },
   },
 }));
@@ -53,31 +69,31 @@ export default function Footer() {
       <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
         <Typography variant="h2" component="h1" gutterBottom>
-          DevCompilers
+          Footer
         </Typography>
         <Typography variant="h5" component="h2" gutterBottom>
-          {'Site desenvolvido para o projeto de Fábrica de Software, '}
-          {'orientado pelo professor Ivonaldo Torres.'}
+          {'Pin a footer to the bottom of the viewport.'}
+          {'The footer will move as the main element of the page grows.'}
         </Typography>
-        <Typography variant="body1">contatodevcompilers@gmail.com</Typography>
-
-        <footer className="rodape"  >
-          <Container maxWidth="sm">
-            <Link rel="stylesheet" href="https://github.com/CoderHamilton/MyLab">
-
-              <div className="git">
-                <GitHubIcon default props />
-              </div>
-            </Link>
-
-            <div className="copyright">
-              <Copyright />
-            </div>
-
-          </Container>
-        </footer>
-
+        <Typography variant="body1">Sticky footer placeholder.</Typography>
       </Container>
+
+
+      <footer className="rodape"  >
+        <Container maxWidth="sm">
+          <Link rel="stylesheet" href="https://github.com/CoderHamilton/MyLab">
+
+            <div className="git">
+              <GitHubIcon default props />
+            </div>
+          </Link>
+
+          <div className="copyright">
+            <Copyright />
+          </div>
+
+        </Container>
+      </footer>
     </div >
   );
 }

@@ -1,15 +1,26 @@
-/* eslint-disable no-undef */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Image from './assets/lab.png'
 import { Box, Container, Grid, Card, CardMedia, CardActionArea, CardContent, Divider, Zoom, useScrollTrigger, CssBaseline, Fab, ThemeProvider } from '@material-ui/core';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import PropTypes from 'prop-types';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import Footer from './footer';
-import NavBar from './NavBar';
-import theme from './theme';
+import Home from './components/home/Home';
+
+import Servicos from './components/servicos/Servicos';
+import Sobre from './components/sobre/Sobre';
+import Navbar2 from './components/navbar/Navbar2';
+import Footer from './components/footer/Footer';
+import Banner from './components/banner/banner';
+import Explorar from './components/explorar/Explorar';
+import Objetivos from './components/objetivos/Objetivos';
+import Divisao from './components/divisao/Divisao';
+import Contato from './components/contato/Contato';
+import Footer2 from './components/footer2/footer2';
+
+
 
 const useStyles = makeStyles((theme) => ({
   hero: {
@@ -90,9 +101,6 @@ const useStyles = makeStyles((theme) => ({
 function ScrollTop(props) {
   const { children, window } = props;
   const classes = useStyles();
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
     disableHysteresis: true,
@@ -118,13 +126,8 @@ function ScrollTop(props) {
 
 ScrollTop.propTypes = {
   children: PropTypes.element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
-
 //fim da rolagem
 
 function App(props) {
@@ -133,9 +136,25 @@ function App(props) {
   return (
     <div className="App">
 
-      <ThemeProvider theme={theme}>
-        <NavBar />
+      <Router>
+        <Fragment>
+          <Navbar2 />
+          <Home />
+          <Servicos />
+          <Sobre />
+          <Banner />
+          <Explorar />
+          <Objetivos />
+          <Divisao />
+        </Fragment>
+      </Router>
+
+      {/* inicio do meu codigo */}
+
+      {/* <ThemeProvider theme={theme}>
+      
       </ThemeProvider>
+
 
       <Box className={classes.hero} id="back-to-top-anchor">
         <Box>Dev Compilers</Box>
@@ -162,8 +181,8 @@ function App(props) {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              {/* <CardActions className={classes.cardActions}>
-              </CardActions> */}
+              <CardActions className={classes.cardActions}>
+              </CardActions>
             </Card>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -183,8 +202,8 @@ function App(props) {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              {/* <CardActions className={classes.cardActions}>
-              </CardActions> */}
+              <CardActions className={classes.cardActions}>
+              </CardActions>
             </Card>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -204,15 +223,15 @@ function App(props) {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              {/* <CardActions className={classes.cardActions}>
-              </CardActions> */}
+              <CardActions className={classes.cardActions}>
+              </CardActions>
             </Card>
           </Grid>
         </Grid>
-        <Typography variant="h3" className={classes.blogText}>
+        <Typography variant="h3" className={classes.blogText} >
           Nosso principal serviço
         </Typography>
-        <Grid container spacing={3} id="servicos">
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={6}>
             <Card className={classes.card}>
               <CardActionArea>
@@ -232,13 +251,7 @@ function App(props) {
                   <Divider />
                 </Typography>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                  O sistema de Apoio e Gerenciamento para Laboratórios (MyLab) - É uma solução tecnológica para proprietários e usuários de laboratórios de escolas, universidades e faculdades.
-                </Typography>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                  Trata-se de uma aplicação capaz de fornecer eficiência no controle para reserva dos laboratórios, onde é possível selecionar datas, horários, e os laboratórios disponíveis para reservar, assim como e visualizar laboratórios que com status de indisponível ou alocado.
-                </Typography>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                  O MyLab é uma plataforma web e mobile que disponibiliza um calendário para agendamento de laboratórios. Esta plataforma tem o intuito de facilitar e organizar a reserva de laboratórios da instituição.
+                  O sistema de Apoio e Gerenciamento para Laboratórios (MyLab) - É uma solução tecnológica para proprietáritos e usuários de laboratórios de escolas, universidades e faculdades.
                 </Typography>
               </CardContent>
             </Card>
@@ -258,7 +271,25 @@ function App(props) {
           </ScrollTop>
         </React.Fragment>
 
-      </Container>
+      </Container> */}
+      {/* fim do meu codigo */}
+
+      <Router>
+        <Fragment>
+          <Contato />
+          <Footer2 />
+        </Fragment>
+
+        <React.Fragment>
+          <CssBaseline />
+          <ScrollTop {...props}>
+            <Fab color="secondary" size="small" aria-label="scroll back to top">
+              <KeyboardArrowUpIcon />
+            </Fab>
+          </ScrollTop>
+        </React.Fragment>
+
+      </Router>
     </div>
   );
 }
