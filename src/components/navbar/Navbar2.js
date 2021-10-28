@@ -14,10 +14,10 @@ const SmoothScroll = () => {
               <AnchorLink href="!#" data-target="mobile-demo" className="sidenav-trigger" ><i className="material-icons"> menu </i> </AnchorLink>
 
               <ul className="right hide-on-med-and-down">
-                <li><AnchorLink href="/home">Home</AnchorLink></li>
+                <li><AnchorLink href="/back-to-top-anchor">Home</AnchorLink></li>
                 <li><AnchorLink href="/servicos">Serviços</AnchorLink></li>
                 <li><AnchorLink href="/sobre">Sobre</AnchorLink></li>
-                <li><AnchorLink href="/contato">Contato</AnchorLink></li>
+                <li><AnchorLink href="/contact">Contato</AnchorLink></li>
               </ul>
             </div>
           </div>

@@ -40,23 +40,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
   },
-  social: {
-
-
-
-
-  },
-
-  //   social:hover: {
-  //     color: "#608dfd",
-  //     background: "#fff",
-  //   },
 
   props: {
-    // Name of the component ⚛️
     MuiButtonBase: {
-      // The default props to change
-      disableRipple: true, // No more ripple, on the whole application 💣!
+      disableRipple: true,
     },
   },
 }));

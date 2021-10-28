@@ -9,11 +9,12 @@ import './Banner.css';
 export default class banner extends Component {
   render() {
     return (
-      <section className="slider" id="home">
+      <section className="slider" id="home"> 
+      {/* id=home errado */}
         <ul className="slides">
           <li>
             <img src={ImgOne} alt="Vacation" />
-            <div className="caption center-align gradient">
+            <div className="caption center-align">
               <h2>Organize sua instituição</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
                 Lorem ipsum dolor sit amet

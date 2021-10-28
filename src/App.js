@@ -76,9 +76,6 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     bottom: theme.spacing(2),
     right: theme.spacing(2),
-
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -143,6 +140,18 @@ function App(props) {
           <Explorar />
           <Objetivos />
           <Divisao />
+          <Contato />
+          <Footer2 />
+
+          <React.Fragment>
+            <CssBaseline />
+            <ScrollTop {...props}>
+              <Fab className="" color="secondary" size="small" aria-label="scroll back to top">
+                <KeyboardArrowUpIcon />
+              </Fab>
+            </ScrollTop>
+          </React.Fragment>
+
         </Fragment>
       </Router>
 
@@ -271,22 +280,6 @@ function App(props) {
       </Container> */}
       {/* fim do meu codigo */}
 
-      <Router>
-        <Fragment>
-          <Contato />
-          <Footer2 />
-        </Fragment>
-
-        <React.Fragment>
-          <CssBaseline />
-          <ScrollTop {...props}>
-            <Fab color="secondary" size="small" aria-label="scroll back to top">
-              <KeyboardArrowUpIcon />
-            </Fab>
-          </ScrollTop>
-        </React.Fragment>
-
-      </Router>
     </div>
   );
 }
