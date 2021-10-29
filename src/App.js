@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/home/Home';
 
 import Servicos from './components/servicos/Servicos';
-import Sobre from './components/sobre/Sobre';
+// import Sobre from './components/sobre/Sobre';
 import Navbar2 from './components/navbar/Navbar2';
 import Banner from './components/banner/banner';
 import Explorar from './components/explorar/Explorar';
@@ -135,7 +135,7 @@ function App(props) {
           <Navbar2 />
           <Home />
           <Servicos />
-          <Sobre />
+          {/* <Sobre /> */}
           <Banner />
           <Explorar />
           <Objetivos />
@@ -154,6 +154,10 @@ function App(props) {
 
         </Fragment>
       </Router>
+      </div>
+  );
+}
+export default App;
 
       {/* inicio do meu codigo */}
 
@@ -280,8 +284,6 @@ function App(props) {
       </Container> */}
       {/* fim do meu codigo */}
 
-    </div>
-  );
-}
 
-export default App;
+
+

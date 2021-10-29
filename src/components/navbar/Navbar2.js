@@ -6,7 +6,7 @@ import './Navbar.css'
 const SmoothScroll = () => {
   return (
     <section className="cor" id="back-to-top-anchor">
-      <div className="navbar-fixed blue-text text-darken-2">
+      <div className="navbar blue-text text-darken-2">
         <nav>
           <div className="container blue-text text-darken-2">
             <div className="nav-wrapper blue-text text-darken-2">
@@ -17,7 +17,8 @@ const SmoothScroll = () => {
                 <li><AnchorLink href="/back-to-top-anchor">Home</AnchorLink></li>
                 <li><AnchorLink href="/servicos">Serviços</AnchorLink></li>
                 <li><AnchorLink href="/sobre">Sobre</AnchorLink></li>
-                <li><AnchorLink href="/contact">Contato</AnchorLink></li>
+               <li><AnchorLink href="/contact">Contato</AnchorLink></li>
+               <li><AnchorLink href="/contact">Documentos</AnchorLink></li>
               </ul>
             </div>
           </div>

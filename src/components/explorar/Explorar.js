@@ -13,7 +13,7 @@ export default class Explorar extends Component {
                             <div className="card-panel">
                             <i className="material-icons medium blue-text">history</i>
                             <h4>Missão</h4>
-                            <p>Gerenciar da melhor forma possível sua instituição</p>
+                            <p>Gerenciar da melhor forma possível sua instituiçãoGerenciar da melhor forma possível sua instituição </p>
                             </div>
 
                         </div>

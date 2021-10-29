@@ -20,9 +20,9 @@ function Copyright() {
 export default class footer2 extends Component {
   render() {
     return (
-      <section className="Section footer blue darkent-2 white-text center scrollspy">
-        <div className="row">
-          <div className="col s12">
+      <section className="Section blue darkent-2 white-text center scrollspy">
+        <div className="footer">
+          <div className="col s12 ">
             <div>
               <Copyright />
             </div>
