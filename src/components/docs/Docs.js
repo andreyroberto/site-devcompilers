@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { Component, useState } from 'react'
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import './Docs.css';
