@@ -12,7 +12,7 @@ export default class Divisao extends Component {
           <div className="row">
             <div className=" col s12 center">
               <a href="!#" className="btn btn-large waves-effect white blue-text text-darken-">
-                <i className="material-icons left">send</i>Serviços
+                <i className="material-icons left"></i>Nossos Serviços
               </a>
 
             </div>

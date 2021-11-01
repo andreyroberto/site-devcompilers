@@ -18,7 +18,7 @@ const SmoothScroll = () => {
                 <li><AnchorLink href="/servicos">Serviços</AnchorLink></li>
                 <li><AnchorLink href="/sobre">Sobre</AnchorLink></li>
                <li><AnchorLink href="/contact">Contato</AnchorLink></li>
-               <li><AnchorLink href="/contact">Documentos</AnchorLink></li>
+               <li><AnchorLink href="/docs">Documentos</AnchorLink></li>
               </ul>
             </div>
           </div>

@@ -1,7 +1,8 @@
-.footer div{
+.footer {
   padding-bottom: 20px;
+  padding-top: 1px;
 };
 
-.teste link{
-  margin: 20px;
+.github{
+  padding: 0;
 }

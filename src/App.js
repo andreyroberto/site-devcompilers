@@ -8,7 +8,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/home/Home';
 
 import Servicos from './components/servicos/Servicos';
-// import Sobre from './components/sobre/Sobre';
 import Navbar2 from './components/navbar/Navbar2';
 import Banner from './components/banner/banner';
 import Explorar from './components/explorar/Explorar';
@@ -16,27 +15,11 @@ import Objetivos from './components/objetivos/Objetivos';
 import Divisao from './components/divisao/Divisao';
 import Contato from './components/contato/Contato';
 import Footer2 from './components/footer2/footer2';
+import Docs from './components/docs/Docs';
 
 
 
 const useStyles = makeStyles((theme) => ({
-  hero: {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media-exp1.licdn.com/dms/image/C4E16AQFyL14FnPKs5w/profile-displaybackgroundimage-shrink_350_1400/0/1629848461767?e=1636588800&v=beta&t=k8C_rS-Z_8qYPvknft-pOKZpmFl3gNXdgf7opjSt62w')`,
-    height: "500px",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    position: "relative",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    color: "#fff",
-    fontSize: "4rem",
-    [theme.breakpoints.down("sm")]: {
-      height: 300,
-      fontSize: "3em"
-    }
-  },
   blogsContainer: {
     paddingTop: theme.spacing(3),
   },
@@ -134,19 +117,19 @@ function App(props) {
         <Fragment>
           <Navbar2 />
           <Home />
-          <Servicos />
-          {/* <Sobre /> */}
           <Banner />
           <Explorar />
           <Objetivos />
           <Divisao />
+          <Servicos />
+          <Docs />
           <Contato />
           <Footer2 />
 
           <React.Fragment>
             <CssBaseline />
             <ScrollTop {...props}>
-              <Fab className="" color="secondary" size="small" aria-label="scroll back to top">
+              <Fab color="secondary" size="small" aria-label="scroll back to top">
                 <KeyboardArrowUpIcon />
               </Fab>
             </ScrollTop>
@@ -154,17 +137,8 @@ function App(props) {
 
         </Fragment>
       </Router>
-      </div>
-  );
-}
-export default App;
 
-      {/* inicio do meu codigo */}
-
-      {/* <ThemeProvider theme={theme}>
-      
-      </ThemeProvider>
-
+      {/* inicio do meu codigo }
 
       <Box className={classes.hero} id="back-to-top-anchor">
         <Box>Dev Compilers</Box>
@@ -238,52 +212,12 @@ export default App;
             </Card>
           </Grid>
         </Grid>
-        <Typography variant="h3" className={classes.blogText} >
-          Nosso principal serviço
-        </Typography>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={6}>
-            <Card className={classes.card}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.mediaLab}
-                  image={Image}
-                  title="Lab"
-                />
-              </CardActionArea>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} container>
-            <Card className={classes.card}>
-              <CardContent>
-                <Typography className={classes.textMylab} gutterBottom variant="h4" component="h2">
-                  MyLab
-                  <Divider />
-                </Typography>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                  O sistema de Apoio e Gerenciamento para Laboratórios (MyLab) - É uma solução tecnológica para proprietáritos e usuários de laboratórios de escolas, universidades e faculdades.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        </Grid>
-
-        <Box pt={5} id="footer">
-          <Footer />
-        </Box>
-
-        <React.Fragment>
-          <CssBaseline />
-          <ScrollTop {...props}>
-            <Fab color="secondary" size="small" aria-label="scroll back to top">
-              <KeyboardArrowUpIcon />
-            </Fab>
-          </ScrollTop>
-        </React.Fragment>
-
       </Container> */}
+
       {/* fim do meu codigo */}
 
+    </div>
 
-
-
+  );
+}
+export default App;
