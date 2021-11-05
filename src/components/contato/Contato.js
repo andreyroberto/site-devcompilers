@@ -42,12 +42,12 @@ export default class Contato extends Component {
                   </div>
 
                   <div className="input-field">
-                    <input type="text" id="name" className="validate" />
+                    <input type="text" id="email" className="validate" />
                     <label for="email" className="blue-text">Email</label>
                   </div>
 
                   <div className="input-field">
-                    <input type="text" id="name" className="validate" />
+                    <input type="text" id="phone" className="validate" />
                     <label for="phone" className="blue-text">Telefone</label>
                   </div>
 

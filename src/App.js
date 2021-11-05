@@ -14,7 +14,7 @@ import Explorar from './components/explorar/Explorar';
 import Objetivos from './components/objetivos/Objetivos';
 import Divisao from './components/divisao/Divisao';
 import Contato from './components/contato/Contato';
-import Footer2 from './components/footer2/footer2';
+import Footer from './components/footer/Footer';
 import Docs from './components/docs/Docs';
 
 
@@ -124,7 +124,7 @@ function App(props) {
           <Servicos />
           <Docs />
           <Contato />
-          <Footer2 />
+          <Footer />
 
           <React.Fragment>
             <CssBaseline />

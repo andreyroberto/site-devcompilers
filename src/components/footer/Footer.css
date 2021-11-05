@@ -1,0 +1,16 @@
+.footer {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.footer-component{
+  background-color: #305BB2;
+}
+
+.github{
+  padding: 0;
+}
+
+.dev-logo {
+  padding: 10px;
+}
