@@ -3,9 +3,12 @@ import React, { Component } from 'react'
 export default class Contato extends Component {
   render() {
     return (
-      <section id="contact" className=" section section-contact scrollspy">
+      <section id="contact" className="section section-contact scrollspy grey lighten-3">
         <div className="container">
           <div className="row">
+            <div className="row">
+              <h4 className="center">Contate a <span className="blue-text darnken-1">DevCompilers</span></h4>
+            </div>
             <div className="col s12 m6">
               <div className="card-panel blue white-text center">
                 <i className="material-icons">email</i>

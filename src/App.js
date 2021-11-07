@@ -16,6 +16,7 @@ import Divisao from './components/divisao/Divisao';
 import Contato from './components/contato/Contato';
 import Footer from './components/footer/Footer';
 import Docs from './components/docs/Docs';
+import Sobre from './components/sobre/Sobre';
 
 
 
@@ -122,6 +123,7 @@ function App(props) {
           <Objetivos />
           <Divisao />
           <Servicos />
+          <Sobre />
           <Docs />
           <Contato />
           <Footer />
