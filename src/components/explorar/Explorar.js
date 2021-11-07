@@ -39,7 +39,7 @@ export default class Explorar extends Component {
               <div className="card-panel">
                 <i className="material-icons medium blue-text">verified</i>
                 <h4>Confiança</h4>
-                <p>Não se preoculpe mas com agendamentos duplicados</p>
+                <p>Não se preocupe mais com agendamentos duplicados</p>
               </div>
             </div>
 

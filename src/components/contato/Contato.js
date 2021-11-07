@@ -11,9 +11,9 @@ export default class Contato extends Component {
             </div>
             <div className="col s12 m6">
               <div className="card-panel blue white-text center">
-                <i className="material-icons">email</i>
+                <i className="material-icons medium">email</i>
                 <h5>Endereço DevCompilers</h5>
-                <p>Paulista-Centro, Rua Estrada de tamandaré </p>
+                <p>Paulista-Centro, Rua Estrada de tamandaré</p>
               </div>
               <ul className="collection with-header">
                 <li className="collection-header">
@@ -34,8 +34,9 @@ export default class Contato extends Component {
 
               </ul>
             </div>
+            
             <div className="col s12 m6">
-              <div className="card-panel grey lighten-3 center">
+              <div className="card-panel white lighten-3 center">
                 <h5>Por favor para mais informações preencha o formulário</h5>
                 <form>
 

@@ -10,7 +10,7 @@ export default class sobre extends Component {
             <h4 className="center">Equipe <span className="blue-text darnken-1">DevCompilers</span></h4>
           </div>
 
-          <div className="col s6 m3">
+          <div className="col s12">
             <img className="sobre" src={Image} alt="equipe devcompilers" width="100%"></img>
           </div>
 
