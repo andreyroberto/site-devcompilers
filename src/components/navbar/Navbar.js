@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../../../node_modules/materialize-css/dist/css/materialize.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './Navbar.css'
+import DevText from '../../assets/dev-text-white.svg';
 
 const SmoothScroll = () => {
   return (
@@ -10,7 +11,9 @@ const SmoothScroll = () => {
         <nav>
           <div className="container blue-text text-darken-2">
             <div className="nav-wrapper blue-text text-darken-2">
-              <AnchorLink href="!#" className="brand-logo">DevCompilers</AnchorLink>
+              <AnchorLink href="!#" className="brand-logo">
+                <img className="dev-logo" src={DevText} alt="DevCompilers" width="100%" height="60px" />
+              </AnchorLink>
               <AnchorLink href="!#" data-target="mobile-demo" className="sidenav-trigger" ><i className="material-icons"> menu </i> </AnchorLink>
 
               <ul className="right hide-on-med-and-down">
