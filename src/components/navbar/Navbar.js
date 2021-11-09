@@ -29,11 +29,11 @@ const SmoothScroll = () => {
       </div>
 
       <ul className="sidenav" id="mobile-demo">
-        <li> <AnchorLink href="#home">Home</AnchorLink></li>
+        <li> <AnchorLink href="#back-to-top-anchor">Home</AnchorLink></li>
         <li> <AnchorLink href="#servicos">Serviços</AnchorLink></li>
         <li> <AnchorLink href="#sobre">Sobre</AnchorLink></li>
         <li> <AnchorLink href="#docs">Documentos</AnchorLink></li>
-        <li> <AnchorLink href="#contato">Contato</AnchorLink></li>
+        <li> <AnchorLink href="#contact">Contato</AnchorLink></li>
       </ul>
 
     </section>

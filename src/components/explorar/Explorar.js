@@ -12,7 +12,7 @@ export default class Explorar extends Component {
             </h4>
 
             <div className="col s6 m3">
-              <div className="card-panel">
+              <div className="card-panel hoverable">
                 <i className="material-icons medium blue-text">history</i>
                 <h4>Missão</h4>
                 <p>Gerenciar da melhor forma possível sua instituição</p>
@@ -20,7 +20,7 @@ export default class Explorar extends Component {
             </div>
 
             <div className="col s6 m3">
-              <div className="card-panel">
+              <div className="card-panel hoverable">
                 <i className="material-icons medium blue-text">room</i>
                 <h4>Local</h4>
                 <p>Centralize todas suas ideias em um só lugar</p>
@@ -28,7 +28,7 @@ export default class Explorar extends Component {
             </div>
 
             <div className="col s6 m3">
-              <div className="card-panel">
+              <div className="card-panel hoverable">
                 <i className="material-icons medium blue-text">lightbulb</i>
                 <h4>Ideias</h4>
                 <p>Deixe tudo conosco que nós resolvemos tudo</p>
@@ -36,7 +36,7 @@ export default class Explorar extends Component {
             </div>
             
             <div className="col s6 m3">
-              <div className="card-panel">
+              <div className="card-panel hoverable">
                 <i className="material-icons medium blue-text">verified</i>
                 <h4>Confiança</h4>
                 <p>Não se preocupe mais com agendamentos duplicados</p>

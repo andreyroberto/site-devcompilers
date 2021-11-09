@@ -1,0 +1,20 @@
+.radius{
+  border-radius: 40px;
+}
+
+.with-header{
+  padding: 5px;
+}
+
+.pad{
+  padding-bottom: 40px;
+}
+
+.btn{
+  background-color: #2196F3;
+}
+
+.btn-hover:hover {
+  transition: all 265ms ease-in;
+  background-color: #305BB2;
+}

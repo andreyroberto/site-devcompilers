@@ -11,7 +11,7 @@ function Copyright() {
     <Typography variant="body2" className="white-text">
       <Link color="inherit" href="https://github.com/andreyroberto/site-devcompilers" target="blank" rel="noopener" underline="none">
         <img className="dev-logo" src={DevText} alt="DevCompilers" width="200px" /><br></br>
-      </Link>{' '}
+      </Link>
       {'© ' + new Date().getFullYear() + ', todos os direitos reservados.'}
     </Typography>
   );
@@ -26,7 +26,7 @@ export default class footer2 extends Component {
             <div>
               <Copyright />
             </div>
-            <p>Acesse o repositório do projeto:</p>
+            <p>Acesse o repositório do projeto</p>
 
             <div className="github">
               <Link href="https://github.com/CoderHamilton/MyLab" target="blank" className="white-text" rel="noopener">

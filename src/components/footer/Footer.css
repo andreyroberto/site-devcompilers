@@ -8,14 +8,21 @@
 }
 
 .github{
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.github i:hover {
+  color: #2D3446;
+  transition: all 265ms ease-in-out;
+  transform: scale(1.2);
+}
+
+.github i:before{
+  transition: all 265ms ease-in-out;
+  transform: scale(1.0);
 }
 
 .dev-logo {
   padding: 10px;
-}
-
-.github i:hover:before {
-  transition: all 265ms ease-in;
-  color: #2D3446;
 }
