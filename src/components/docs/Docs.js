@@ -15,7 +15,7 @@ import { Divider } from '@material-ui/core';
 const urlDocBacklog = Backlog;
 const urlDocCaso = Caso;
 const urlDocEstoria = Estoria;
-const urlDocOrganograma;
+const urlDocOrganograma = null;
 const urlDocSolicitacoes = Solicitacoes;
 const urlDocSprintMobile = SprintMobile;
 const urlDocSprintWeb = SprintWeb;
