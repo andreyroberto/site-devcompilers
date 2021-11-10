@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import './Contato.css';
+import React, { Component } from 'react'
 
 export default class Contato extends Component {
   render() {
     return (
       <section id="contact" className="section section-contact scrollspy grey lighten-3">
-        <div className="container pad">
+        <div className="container">
           <div className="row">
             <div className="row">
               <h4 className="center">Contate a <span className="blue-text darnken-1">DevCompilers</span></h4>
@@ -14,20 +13,19 @@ export default class Contato extends Component {
               <div className="card-panel blue white-text center">
                 <i className="material-icons medium">email</i>
                 <h5>Endereço DevCompilers</h5>
-                <p>Av. Sen. Salgado Filho, s/n - Centro, Paulista</p>
+                <p>Paulista-Centro, Rua Estrada de tamandaré</p>
               </div>
-
-              <ul className="collection with-header card-panel">
+              <ul className="collection with-header">
                 <li className="collection-header">
                   <h4>Main Office</h4>
                 </li>
                 <li className="collection-item">
                   <i className="fas fa-map-marker-alt"></i>
-                  <i> 53401-440, Pernambuco Brasil, UF-PE</i>
+                  <i> 3425, Pernambuco Brasil, UF-PE</i>
                 </li>
                 <li className="collection-item">
                   <i className="fas fa-phone"></i>
-                  <i> (81) 99999-9999</i>
+                  <i> 81-997561079</i>
                 </li>
                 <li className="collection-item">
                   <i className="fas fa-envelope-square"></i>
@@ -62,7 +60,7 @@ export default class Contato extends Component {
                     <label for="message" className="blue-text">Mensagem</label>
                   </div>
 
-                  <input type="submit" value="Enviar" className="btn btn-hover"></input>
+                  <input type="submit" value="Enviar" className="btn blue"></input>
 
                 </form>
 

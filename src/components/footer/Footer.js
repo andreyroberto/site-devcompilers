@@ -11,7 +11,7 @@ function Copyright() {
     <Typography variant="body2" className="white-text">
       <Link color="inherit" href="https://github.com/andreyroberto/site-devcompilers" target="blank" rel="noopener" underline="none">
         <img className="dev-logo" src={DevText} alt="DevCompilers" width="200px" /><br></br>
-      </Link>
+      </Link>{' '}
       {'© ' + new Date().getFullYear() + ', todos os direitos reservados.'}
     </Typography>
   );
