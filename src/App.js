@@ -15,7 +15,7 @@ import Objetivos from './components/objetivos/Objetivos';
 import Divisao from './components/divisao/Divisao';
 import Contato from './components/contato/Contato';
 import Footer from './components/footer/Footer';
-import Docs from './components/docs/Docs';
+import Docs from './components/documentos/Documentos';
 import Sobre from './components/sobre/Sobre';
 
 

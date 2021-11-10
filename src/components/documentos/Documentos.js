@@ -1,13 +1,11 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React, { Component, useState } from 'react'
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
-import './Docs.css';
-import Url from '../../assets/documentos/docs.zip';
-// import Backlog from '../../assets/documentos/backlog.zip';
+import './Documentos.css';
+import Url from '../../assets/documentos/backlog.zip';
 import { Divider } from '@material-ui/core';
 
 const urlDocDownload = Url;
-// var urlDoc = Url;
 
 function Download() {
   const [download, setDownload] = useState(false);
@@ -15,7 +13,7 @@ function Download() {
 
   return (
     <div className="center">
-      <button className="waves-effect waves-light blue btn-large" onClick={() => {
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
         setDownload(urlDocDownload)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
@@ -31,7 +29,7 @@ export default class Divisao extends Component {
         <div className="container">
           <div className="row">
             <div className="row">
-              <h4 className="center"><span className="blue-text darnken-1">Baixe</span> as documentações</h4>
+              <h4 className="center">Baixe as <span className="blue-text darnken-1">documentações</span></h4>
             </div>
 
             <Divider />
@@ -41,7 +39,6 @@ export default class Divisao extends Component {
                 <p className="flow-text">Backlog Mylab</p>
               </div>
               <div className="col s6">
-                {/* {this.urlDoc = this.Backlog} */}
                 <Download />
               </div>
             </div>
