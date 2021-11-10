@@ -1,0 +1,20 @@
+.pad{
+  padding-bottom: 40px;
+}
+
+.btn{
+  background-color: #2196F3;
+}
+
+.with-header{
+  padding-bottom: 10px;
+}
+
+.btn-hover:hover {
+  transition: all 265ms ease-in;
+  background-color: #305BB2;
+}
+
+.btn-hover:focus{
+  background-color: #2196F3;
+}

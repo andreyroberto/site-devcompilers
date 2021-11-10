@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Contato.css';
 
 export default class Contato extends Component {
   render() {
     return (
       <section id="contact" className="section section-contact scrollspy grey lighten-3">
-        <div className="container">
+        <div className="container pad">
           <div className="row">
             <div className="row">
               <h4 className="center">Contate a <span className="blue-text darnken-1">DevCompilers</span></h4>
@@ -13,31 +14,31 @@ export default class Contato extends Component {
               <div className="card-panel blue white-text center">
                 <i className="material-icons medium">email</i>
                 <h5>Endereço DevCompilers</h5>
-                <p>Paulista-Centro, Rua Estrada de tamandaré</p>
+                <p>Av. Sen. Salgado Filho, s/n - Centro, Paulista</p>
               </div>
-              <ul className="collection with-header">
+
+              <ul className="collection with-header card">
                 <li className="collection-header">
                   <h4>Main Office</h4>
                 </li>
                 <li className="collection-item">
                   <i className="fas fa-map-marker-alt"></i>
-                  <i> 3425, Pernambuco Brasil, UF-PE</i>
+                  <i> 53401-440, Pernambuco, PE - Brasil</i>
                 </li>
                 <li className="collection-item">
                   <i className="fas fa-phone"></i>
-                  <i> 81-997561079</i>
+                  <i> (81) 99999-9999</i>
                 </li>
                 <li className="collection-item">
                   <i className="fas fa-envelope-square"></i>
                   <i> contatodevcompilers@gmail.com</i>
                 </li>
-
               </ul>
             </div>
             
             <div className="col s12 m6">
               <div className="card-panel white lighten-3 center">
-                <h5>Por favor para mais informações preencha o formulário</h5>
+                <h5>Entre em contato conosco preenchendo o formulário abaixo</h5>
                 <form>
 
                   <div className="input-field">
@@ -60,7 +61,7 @@ export default class Contato extends Component {
                     <label for="message" className="blue-text">Mensagem</label>
                   </div>
 
-                  <input type="submit" value="Enviar" className="btn blue"></input>
+                  <input type="submit" value="Enviar" className="btn btn-hover"></input>
 
                 </form>
 
