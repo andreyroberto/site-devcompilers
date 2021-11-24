@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Explorar.css';
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 
 export default class Explorar extends Component {
@@ -12,32 +13,40 @@ export default class Explorar extends Component {
             </h4>
 
             <div className="col s6 m3">
-              <div className="card-panel hoverable">
-                <i className="material-icons medium blue-text">history</i>
+              <div className="card small hoverable">
+                <div class="btn-floating btn-large pulse blue ">
+                  <i class="material-icons medium white-text">history</i>
+                </div>
                 <h4>Missão</h4>
-                <p>Gerenciar da melhor forma possível sua instituição</p>
+                <p>Gerenciar da melhor forma <br />possível sua instituição</p>
               </div>
             </div>
 
             <div className="col s6 m3">
-              <div className="card-panel hoverable">
-                <i className="material-icons medium blue-text">room</i>
+              <div className="card small hoverable">
+                <div class="btn-floating btn-large pulse blue">
+                  <i className="material-icons medium white-text">room</i>
+                </div>
                 <h4>Local</h4>
-                <p>Centralize todas suas ideias em um só lugar</p>
+                <p>Centralize todas suas ideias em <br />um só lugar</p>
               </div>
             </div>
 
             <div className="col s6 m3">
-              <div className="card-panel hoverable">
-                <i className="material-icons medium blue-text">lightbulb</i>
+              <div className="card small hoverable">
+                <div class="btn-floating btn-large pulse blue">
+                  <i className="material-icons medium white-text">lightbulb</i>
+                </div>
                 <h4>Ideias</h4>
                 <p>Deixe tudo conosco que nós resolvemos tudo</p>
               </div>
             </div>
-            
+
             <div className="col s6 m3">
-              <div className="card-panel hoverable">
-                <i className="material-icons medium blue-text">verified</i>
+              <div className="card small hoverable">
+                <div class="btn-floating btn-large pulse blue">
+                  <i className="material-icons medium white-text">verified</i>
+                </div>
                 <h4>Confiança</h4>
                 <p>Não se preocupe mais com agendamentos duplicados</p>
               </div>

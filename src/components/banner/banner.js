@@ -13,7 +13,7 @@ export default class banner extends Component {
       {/* id=home errado */}
         <ul className="slides">
           <li>
-            <img src={ImgOne} alt="Vacation" />
+            <img src={ImgTwo} alt="Vacation" />
             <div className="caption center-align">
               <h2>Organize sua instituição</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
@@ -23,7 +23,7 @@ export default class banner extends Component {
             </div>
           </li>
           <li>
-            <img src={ImgTwo} alt="Vacation" />
+            <img src={ImgOne} alt="Vacation" />
             <div className="caption left-align">
               <h2>Seja o diferencial</h2>
               <h5 className="light grey-text text-lighten-3 hide-on-small-only">
