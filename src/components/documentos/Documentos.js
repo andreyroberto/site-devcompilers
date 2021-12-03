@@ -2,19 +2,53 @@
 import React, { Component, useState } from 'react'
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import './Documentos.css';
-import Url from '../../assets/documentos/backlog.zip';
+import UrlBacklog from '../../assets/documentos/backlog.zip';
+import UrlCaso from '../../assets/documentos/caso-de-negocio.zip';
+import UrlEstoria from '../../assets/documentos/estorias-do-usuario.zip'
 import { Divider } from '@material-ui/core';
 
-const urlDocDownload = Url;
+const urlBacklog = UrlBacklog;
+const urlCaso = UrlCaso;
+const urlEstoria = UrlEstoria;
 
-function Download() {
+function DownloadBacklog() {
   const [download, setDownload] = useState(false);
   const [count, setCount] = useState(0)
 
   return (
     <div className="center">
       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
-        setDownload(urlDocDownload)
+        setDownload(urlBacklog)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadCaso() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlCaso)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadEstoria() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlEstoria)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
@@ -39,7 +73,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Backlog Mylab</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadBacklog />
               </div>
             </div>
           </div>
@@ -52,7 +86,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Caso de negócio</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadCaso />
               </div>
             </div>
           </div>
@@ -65,7 +99,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Estórias do usuário</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadEstoria />
               </div>
             </div>
           </div>
@@ -78,7 +112,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Organograma</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadBacklog />
               </div>
             </div>
           </div>
@@ -91,7 +125,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Solicitações dos principais envolvidos</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadBacklog />
               </div>
             </div>
           </div>
@@ -104,7 +138,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Sprint backlog mobile</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadBacklog />
               </div>
             </div>
           </div>
@@ -117,7 +151,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Sprint backlog web</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadBacklog />
               </div>
             </div>
           </div>
@@ -130,7 +164,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Termo de abertura</p>
               </div>
               <div className="col s6">
-                <Download />
+                <DownloadBacklog />
               </div>
             </div>
           </div>

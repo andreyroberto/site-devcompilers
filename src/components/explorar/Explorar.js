@@ -18,7 +18,7 @@ export default class Explorar extends Component {
                   <i class="material-icons medium white-text">history</i>
                 </div>
                 <h4>Missão</h4>
-                <p>Gerenciar da melhor forma <br />possível sua instituição</p>
+                <p>Gerenciar da melhor forma possível sua instituição</p>
               </div>
             </div>
 
@@ -28,7 +28,7 @@ export default class Explorar extends Component {
                   <i className="material-icons medium white-text">room</i>
                 </div>
                 <h4>Local</h4>
-                <p>Centralize todas suas ideias em <br />um só lugar</p>
+                <p>Centralize todas suas ideias em um só lugar</p>
               </div>
             </div>
 
