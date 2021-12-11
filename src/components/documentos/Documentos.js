@@ -4,12 +4,16 @@ import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import './Documentos.css';
 import UrlBacklog from '../../assets/documentos/backlog.zip';
 import UrlCaso from '../../assets/documentos/caso-de-negocio.zip';
-import UrlEstoria from '../../assets/documentos/estorias-do-usuario.zip'
+import UrlEstoria from '../../assets/documentos/estorias-do-usuario.zip';
+import UrlOrganograma from '../../assets/documentos/organograma.zip';
+import UrlSolicitacoes from '../../assets/documentos/solicitacoes-dos-principais-envolvidos.zip';
 import { Divider } from '@material-ui/core';
 
 const urlBacklog = UrlBacklog;
 const urlCaso = UrlCaso;
 const urlEstoria = UrlEstoria;
+const urlOrganograma = UrlOrganograma;
+const urlSolicitacoes = UrlSolicitacoes;
 
 function DownloadBacklog() {
   const [download, setDownload] = useState(false);
@@ -49,6 +53,36 @@ function DownloadEstoria() {
     <div className="center">
       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
         setDownload(urlEstoria)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadOrganograma() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlOrganograma)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadSolicitacao() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlSolicitacoes)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
@@ -112,7 +146,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Organograma</p>
               </div>
               <div className="col s6">
-                <DownloadBacklog />
+                <DownloadOrganograma />
               </div>
             </div>
           </div>
@@ -125,7 +159,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Solicitações dos principais envolvidos</p>
               </div>
               <div className="col s6">
-                <DownloadBacklog />
+                <DownloadSolicitacao />
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default class sobre extends Component {
           </div>
 
           <div>
-            <p className="flow-text center">A <b>DevCompilers</b> é composta por graduandos do curso de Sistemas de Informação da faculdade Uninassau localizada na cidade do Paulista. Nossa equipe foi formada para o desenvolvimento do projeto final do curso, a <b>Fábrica de Software.</b></p>
+            <p className="flow-text center">A <b>Dev Compilers</b> é composta por graduandos do curso de Sistemas de Informação da faculdade Uninassau localizada na cidade do Paulista. A equipe foi formada para o desenvolvimento do projeto final do curso, a <b>Fábrica de Software.</b></p>
           </div>
         </div>
       </section>
