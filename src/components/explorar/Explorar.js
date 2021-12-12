@@ -9,7 +9,7 @@ export default class Explorar extends Component {
         <div className="container">
           <div className="row">
             <h4 className="center">
-              <span className="blue-text darnken-1">Valores </span>Mylab
+              <span className="blue-text darnken-1">Valores </span>Dev Compilers
             </h4>
 
             <div className="col s6 m3">
@@ -25,10 +25,10 @@ export default class Explorar extends Component {
             <div className="col s6 m3">
               <div className="card small hoverable">
                 <div class="btn-floating btn-large pulse blue">
-                  <i className="material-icons medium white-text">room</i>
+                  <i className="material-icons medium white-text">remove_red_eye</i>
                 </div>
-                <h4>Local</h4>
-                <p>Centralize todas suas ideias em um só lugar</p>
+                <h4>Visão</h4>
+                <p>Criar planejamentos e ações, compartilhar sonhos</p>
               </div>
             </div>
 
@@ -38,7 +38,7 @@ export default class Explorar extends Component {
                   <i className="material-icons medium white-text">lightbulb</i>
                 </div>
                 <h4>Ideias</h4>
-                <p>Deixe tudo conosco que nós resolvemos tudo</p>
+                <p>Pensar em projetos futuros e engajar toda a equipe</p>
               </div>
             </div>
 

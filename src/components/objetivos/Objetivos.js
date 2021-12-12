@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Valores1 from '../../imagens/inovacao4.jpg'
-import Valores2 from '../../imagens/crescimento5.jpg'
-import Valores3 from '../../imagens/resultado8.jpg'
-// import { HashLink as Link } from 'react-router-hash-link'
+import Valores1 from '../../assets/imagens/inovacao.jpg';
+import Valores2 from '../../assets/imagens/crescimento.jpg';
+import Valores3 from '../../assets/imagens/resultado.jpg';
 import './objetivos.css';
 
 export default class Objetivos extends Component {
@@ -15,6 +14,9 @@ export default class Objetivos extends Component {
             <h4 className="center">
               <span className="blue-text darken-1">MyLab </span>Objetivos
             </h4>
+
+            {/* Inovacao */}
+
             <div className="col s12 m4">
 
               <div class="card">
@@ -30,21 +32,15 @@ export default class Objetivos extends Component {
                     a tecnologia pode nos proporcionar.
                   </p>
 
-                  {/* <span class="card-title activator grey-text text-darken-4">Inovação<i class="material-icons right">more_vert</i></span>
-       */}
-
                 </div>
                 <div class="card-reveal justificar">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <span class="card-title grey-text text-darken-4">Inovação<i class="material-icons right">close</i></span>
                   <p>Exploramos sempre novas ideias com o objetivo
                     de oferecer para nossos clientes o melhor que
                     a tecnologia pode nos proporcionar.
                   </p>
                 </div>
               </div>
-
-
-
 
             </div>
 
@@ -61,27 +57,18 @@ export default class Objetivos extends Component {
                 </div>
 
                 <div class="card-content justificar">
-                  <p class="">Exploramos sempre novas ideias com o objetivo
-                    de oferecer para nossos clientes o melhor que
-                    a tecnologia pode nos proporcionar.
+                  <p class="">Processo resultante do trabalho bem desenvolvido por nossos colaboradores que se empenham ao máximo para fornecer a solução ideal para nossos clientes.
                   </p>
-
-                  {/* <span class="card-title activator grey-text text-darken-4">Inovação<i class="material-icons right">more_vert</i></span>
-*/}
 
                 </div>
                 <div class="card-reveal justificar">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Exploramos sempre novas ideias com o objetivo
-                    de oferecer para nossos clientes o melhor que
-                    a tecnologia pode nos proporcionar.
+                  <span class="card-title grey-text text-darken-4">Crescimento<i class="material-icons right">close</i></span>
+                  <p>Processo resultante do trabalho bem desenvolvido por nossos colaboradores que se empenham ao     máximo para fornecer a solução ideal para nossos clientes.
                   </p>
                 </div>
               </div>
 
-
             </div>
-
 
             {/* RESULTADO */}
             <div className="col s12 m4">
@@ -95,17 +82,12 @@ export default class Objetivos extends Component {
                 </div>
 
                 <div class="card-content justificar">
-                  <p class="">Exploramos sempre novas ideias com o objetivo
-                    de oferecer para nossos clientes o melhor que
-                    a tecnologia pode nos proporcionar.
+                  <p class="">Efeito de nossas ações. Finalização de um problema. A cada problema que finalizamos, produzimos soluções satisfatórias, sempre buscando satisfazer as demandas dos nossos clientes.
                   </p>
-
-                  {/* <span class="card-title activator grey-text text-darken-4">Inovação<i class="material-icons right">more_vert</i></span>
-*/}
 
                 </div>
                 <div class="card-reveal justificar">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <span class="card-title grey-text text-darken-4">Resultado<i class="material-icons right">close</i></span>
                   <p>Exploramos sempre novas ideias com o objetivo
                     de oferecer para nossos clientes o melhor que
                     a tecnologia pode nos proporcionar.
@@ -113,19 +95,11 @@ export default class Objetivos extends Component {
                 </div>
               </div>
 
-
             </div>
-
-
-
-
-            {/* EXCLUIR ABAIXO */}
-
 
           </div>
 
         </div>
-
 
       </section >
     )
