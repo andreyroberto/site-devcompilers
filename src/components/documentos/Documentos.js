@@ -1,40 +1,32 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { Component, useState } from 'react'
+import React, { Component, useState } from 'react';
 import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import './Documentos.css';
-import UrlBacklog from '../../assets/documentos/backlog.zip';
-import UrlCaso from '../../assets/documentos/caso-de-negocio.zip';
-import UrlEstoria from '../../assets/documentos/estorias-do-usuario.zip';
-// import UrlOrganograma from '../../assets/documentos/organograma.zip';
-import UrlSolicitacoes from '../../assets/documentos/solicitacoes-dos-principais-envolvidos.zip';
-import UrlSprintM from '../../assets/documentos/sprint-backlog-mobile.zip';
-import UrlSprintW from '../../assets/documentos/sprint-backlog-web.zip';
-import UrlTermo from '../../assets/documentos/termo-de-abertura.zip';
+
+import DocEstoria from '../../assets/documentos/estorias-do-usuario.zip';
+import DocSolicitacoes from '../../assets/documentos/solicitacoes-dos-principais-envolvidos.zip';
+import DocSprint from '../../assets/documentos/sprint-backlog.zip';
+import DocTermo from '../../assets/documentos/termo-de-abertura.zip';
+import DocOrgano from '../../assets/documentos/organograma.zip';
+import DocEscopo from '../../assets/documentos/escopo.zip';
+import DocArqui from '../../assets/documentos/documento-de-arquitetura.zip';
+import DocPlano from '../../assets/documentos/plano-de-teste.zip';
+import DocProcesso from '../../assets/documentos/documento-de-processos.zip';
+import DocCaso from '../../assets/documentos/caso-de-teste.zip';
+import DocProjeto from '../../assets/documentos/projeto-de-teste.zip';
 import { Divider } from '@material-ui/core';
 
-const urlBacklog = UrlBacklog;
-const urlCaso = UrlCaso;
-const urlEstoria = UrlEstoria;
-// const urlOrganograma = UrlOrganograma;
-const urlSolicitacoes = UrlSolicitacoes;
-const urlSprintM = UrlSprintM;
-const urlSprintW = UrlSprintW;
-const urlTermo = UrlTermo;
-
-function DownloadBacklog() {
-  const [download, setDownload] = useState(false);
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="center">
-      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
-        setDownload(urlBacklog)
-        setCount((old) => old + 1)
-      }}><i class="material-icons right text">file_download</i>Baixar</button>
-      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
-    </div>
-  )
-}
+const urlEstoria = DocEstoria;
+const urlSolicitacoes = DocSolicitacoes;
+const urlSprint = DocSprint;
+const urlTermo = DocTermo;
+const urlOrgano = DocOrgano;
+const urlEscopo = DocEscopo;
+const urlArqui = DocArqui;
+const urlPlano = DocPlano;
+const urlProcesso = DocProcesso;
+const urlCaso = DocCaso;
+const urlProjeto = DocProjeto;
 
 function DownloadCaso() {
   const [download, setDownload] = useState(false);
@@ -44,6 +36,37 @@ function DownloadCaso() {
     <div className="center">
       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
         setDownload(urlCaso)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+
+}
+
+function DownloadArqui() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlArqui)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadProcesso() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlProcesso)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
@@ -66,21 +89,6 @@ function DownloadEstoria() {
   )
 }
 
-// function DownloadOrganograma() {
-//   const [download, setDownload] = useState(false);
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <div className="center">
-//       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
-//         setDownload(urlOrganograma)
-//         setCount((old) => old + 1)
-//       }}><i class="material-icons right text">file_download</i>Baixar</button>
-//       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
-//     </div>
-//   )
-// }
-
 function DownloadSolicitacao() {
   const [download, setDownload] = useState(false);
   const [count, setCount] = useState(0)
@@ -96,14 +104,14 @@ function DownloadSolicitacao() {
   )
 }
 
-function DownloadSprintM() {
+function DownloadSprint() {
   const [download, setDownload] = useState(false);
   const [count, setCount] = useState(0)
 
   return (
     <div className="center">
       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
-        setDownload(urlSprintM)
+        setDownload(urlSprint)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
@@ -111,20 +119,6 @@ function DownloadSprintM() {
   )
 }
 
-function DownloadSprintW() {
-  const [download, setDownload] = useState(false);
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="center">
-      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
-        setDownload(urlSprintW)
-        setCount((old) => old + 1)
-      }}><i class="material-icons right text">file_download</i>Baixar</button>
-      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
-    </div>
-  )
-}
 
 function DownloadTermo() {
   const [download, setDownload] = useState(false);
@@ -134,6 +128,66 @@ function DownloadTermo() {
     <div className="center">
       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
         setDownload(urlTermo)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadPlano() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlPlano)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadProjeto() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlProjeto)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadOrgano() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlOrgano)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadEscopo() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlEscopo)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
@@ -151,24 +205,14 @@ export default class Divisao extends Component {
               <h4 className="center">Baixe as <span className="blue-text darnken-1">documentações</span></h4>
             </div>
 
-            <Divider />
-
-            <div className="pad">
-              <div className="col s6">
-                <p className="flow-text">Backlog Mylab</p>
-              </div>
-              <div className="col s6">
-                <DownloadBacklog />
-              </div>
-            </div>
           </div>
 
           <Divider />
-          
+
           <div className="row">
             <div className="pad">
               <div className="col s6">
-                <p className="flow-text">Caso de negócio</p>
+                <p className="flow-text">Caso de teste</p>
               </div>
               <div className="col s6">
                 <DownloadCaso />
@@ -177,7 +221,46 @@ export default class Divisao extends Component {
           </div>
 
           <Divider />
-          
+
+          <div className="row">
+            <div className="pad">
+              <div className="col s6">
+                <p className="flow-text">Documento de Arquitetura</p>
+              </div>
+              <div className="col s6">
+                <DownloadArqui />
+              </div>
+            </div>
+          </div>
+
+          <Divider />
+
+          <div className="row">
+            <div className="pad">
+              <div className="col s6">
+                <p className="flow-text">Documento de Processos</p>
+              </div>
+              <div className="col s6">
+                <DownloadProcesso />
+              </div>
+            </div>
+          </div>
+
+          <Divider />
+
+          <div className="row">
+            <div className="pad">
+              <div className="col s6">
+                <p className="flow-text">Escopo do projeto</p>
+              </div>
+              <div className="col s6">
+                <DownloadEscopo />
+              </div>
+            </div>
+          </div>
+
+          <Divider />
+
           <div className="row">
             <div className="pad">
               <div className="col s6">
@@ -190,20 +273,46 @@ export default class Divisao extends Component {
           </div>
 
           <Divider />
-          
+
+          <div className="row">
+            <div className="pad">
+              <div className="col s6">
+                <p className="flow-text">Plano de teste</p>
+              </div>
+              <div className="col s6">
+                <DownloadPlano />
+              </div>
+            </div>
+          </div>
+
+          <Divider />
+
+          <div className="row">
+            <div className="pad">
+              <div className="col s6">
+                <p className="flow-text">Projeto de teste</p>
+              </div>
+              <div className="col s6">
+                <DownloadProjeto />
+              </div>
+            </div>
+          </div>
+
+          <Divider />
+
           <div className="row">
             <div className="pad">
               <div className="col s6">
                 <p className="flow-text">Organograma</p>
               </div>
               <div className="col s6">
-                {/* <DownloadOrganograma /> */}
+                <DownloadOrgano />
               </div>
             </div>
           </div>
 
           <Divider />
-          
+
           <div className="row">
             <div className="pad">
               <div className="col s6">
@@ -216,33 +325,20 @@ export default class Divisao extends Component {
           </div>
 
           <Divider />
-          
+
           <div className="row">
             <div className="pad">
               <div className="col s6">
-                <p className="flow-text">Sprint backlog mobile</p>
+                <p className="flow-text">Sprint backlog</p>
               </div>
               <div className="col s6">
-                <DownloadSprintM />
+                <DownloadSprint />
               </div>
             </div>
           </div>
 
           <Divider />
-          
-          <div className="row">
-            <div className="pad">
-              <div className="col s6">
-                <p className="flow-text">Sprint backlog web</p>
-              </div>
-              <div className="col s6">
-                <DownloadSprintW />
-              </div>
-            </div>
-          </div>
 
-          <Divider />
-          
           <div className="row">
             <div className="pad">
               <div className="col s6">
