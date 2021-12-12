@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Valores1 from '../../imagens/inovacao4.jpg'
 import Valores2 from '../../imagens/crescimento5.jpg'
 import Valores3 from '../../imagens/resultado8.jpg'
-import { HashLink as Link } from 'react-router-hash-link'
+// import { HashLink as Link } from 'react-router-hash-link'
 import './objetivos.css';
 
 export default class Objetivos extends Component {
