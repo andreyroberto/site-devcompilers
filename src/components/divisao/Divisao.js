@@ -6,7 +6,7 @@ export default class Divisao extends Component {
 
   render() {
     return (
-      <section className="section section-book blue darken-2 white-text center" id="servicos">
+      <section className="section section-book cor darken-2 white-text center" id="servicos">
 
         <div className="container">
           <div className="row">

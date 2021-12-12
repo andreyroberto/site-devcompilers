@@ -7,6 +7,9 @@ import UrlCaso from '../../assets/documentos/caso-de-negocio.zip';
 import UrlEstoria from '../../assets/documentos/estorias-do-usuario.zip';
 // import UrlOrganograma from '../../assets/documentos/organograma.zip';
 import UrlSolicitacoes from '../../assets/documentos/solicitacoes-dos-principais-envolvidos.zip';
+import UrlSprintM from '../../assets/documentos/sprint-backlog-mobile.zip';
+import UrlSprintW from '../../assets/documentos/sprint-backlog-web.zip';
+import UrlTermo from '../../assets/documentos/termo-de-abertura.zip';
 import { Divider } from '@material-ui/core';
 
 const urlBacklog = UrlBacklog;
@@ -14,6 +17,9 @@ const urlCaso = UrlCaso;
 const urlEstoria = UrlEstoria;
 // const urlOrganograma = UrlOrganograma;
 const urlSolicitacoes = UrlSolicitacoes;
+const urlSprintM = UrlSprintM;
+const urlSprintW = UrlSprintW;
+const urlTermo = UrlTermo;
 
 function DownloadBacklog() {
   const [download, setDownload] = useState(false);
@@ -83,6 +89,51 @@ function DownloadSolicitacao() {
     <div className="center">
       <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
         setDownload(urlSolicitacoes)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadSprintM() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlSprintM)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadSprintW() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlSprintW)
+        setCount((old) => old + 1)
+      }}><i class="material-icons right text">file_download</i>Baixar</button>
+      {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
+    </div>
+  )
+}
+
+function DownloadTermo() {
+  const [download, setDownload] = useState(false);
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="center">
+      <button className="waves-effect waves-light btn-large radius btn-hover" onClick={() => {
+        setDownload(urlTermo)
         setCount((old) => old + 1)
       }}><i class="material-icons right text">file_download</i>Baixar</button>
       {download && <iframe src={download + '?c=' + count} style={{ display: 'none' }}></iframe>}
@@ -172,7 +223,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Sprint backlog mobile</p>
               </div>
               <div className="col s6">
-                <DownloadBacklog />
+                <DownloadSprintM />
               </div>
             </div>
           </div>
@@ -185,7 +236,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Sprint backlog web</p>
               </div>
               <div className="col s6">
-                <DownloadBacklog />
+                <DownloadSprintW />
               </div>
             </div>
           </div>
@@ -198,7 +249,7 @@ export default class Divisao extends Component {
                 <p className="flow-text">Termo de abertura</p>
               </div>
               <div className="col s6">
-                <DownloadBacklog />
+                <DownloadTermo />
               </div>
             </div>
           </div>

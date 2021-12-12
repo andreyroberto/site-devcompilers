@@ -11,7 +11,7 @@ export default class Contato extends Component {
               <h4 className="center">Contate a <span className="blue-text darnken-1">Dev Compilers</span></h4>
             </div>
             <div className="col s12 m6">
-              <div className="card-panel blue white-text center">
+              <div className="card-panel cor white-text center">
                 <i className="material-icons medium">email</i>
                 <h5>Endereço Dev Compilers</h5>
                 <p>Av. Sen. Salgado Filho, s/n - Centro, Paulista</p>
