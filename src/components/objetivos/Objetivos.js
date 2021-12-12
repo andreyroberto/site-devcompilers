@@ -83,15 +83,13 @@ export default class Objetivos extends Component {
                 </div>
 
                 <div class="card-content justificar">
-                  <p class="">Efeito de nossas ações. Finalização de um problema. A cada problema que finalizamos, produzimos soluções satisfatórias, sempre buscando satisfazer as demandas dos nossos clientes.
+                  <p class="">Efeito de nossas ações. Finalizamos um problema e para cada problema, produzimos soluções satisfatórias, sempre buscando satisfazer as demandas dos nossos clientes.
                   </p>
 
                 </div>
                 <div class="card-reveal justificar">
                   <span class="card-title grey-text text-darken-4">Resultado<i class="material-icons right">close</i></span>
-                  <p>Exploramos sempre novas ideias com o objetivo
-                    de oferecer para nossos clientes o melhor que
-                    a tecnologia pode nos proporcionar.
+                  <p>Efeito de nossas ações. Finalizamos um problema e para cada problema, produzimos soluções satisfatórias, sempre buscando satisfazer as demandas dos nossos clientes.
                   </p>
                 </div>
               </div>
