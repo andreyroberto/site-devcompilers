@@ -3,7 +3,7 @@ import '../../../node_modules/materialize-css/dist/css/materialize.min.css';
 import ImgOne from '../../assets/image01.jpg';
 import ImgTwo from '../../assets/image02.jpg';
 import ImgThree from '../../assets/image03.jpg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Banner.css';
 
 export default class banner extends Component {
