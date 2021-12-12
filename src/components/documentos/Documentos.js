@@ -7,7 +7,7 @@ import DocEstoria from '../../assets/documentos/estorias-do-usuario.zip';
 import DocSolicitacoes from '../../assets/documentos/solicitacoes-dos-principais-envolvidos.zip';
 import DocSprint from '../../assets/documentos/sprint-backlog.zip';
 import DocTermo from '../../assets/documentos/termo-de-abertura.zip';
-import DocOrgano from '../../assets/documentos/organograma.zip';
+import DocOrgano from '../../assets/documentos/doc-organograma.zip';
 import DocEscopo from '../../assets/documentos/escopo.zip';
 import DocArqui from '../../assets/documentos/documento-de-arquitetura.zip';
 import DocPlano from '../../assets/documentos/plano-de-teste.zip';
