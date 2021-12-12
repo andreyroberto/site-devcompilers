@@ -5,8 +5,6 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Home from './components/home/Home';
-
 import Servicos from './components/servicos/Servicos';
 import Navbar2 from './components/navbar/Navbar';
 import Banner from './components/banner/banner';
@@ -70,7 +68,6 @@ function App(props) {
       <Router>
         <Fragment>
           <Navbar2 />
-          <Home />
           <Banner />
           <Explorar />
           <Objetivos />

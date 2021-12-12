@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import Valores1 from '../../assets/imagens/inovacao.jpg';
 import Valores2 from '../../assets/imagens/crescimento.jpg';

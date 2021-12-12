@@ -4,65 +4,35 @@ import { Typography, Grid, Card, CardContent, CardMedia, CardActionArea, Divider
 import Image from '../../assets/mylab-1500.png';
 
 const useStyles = makeStyles((theme) => ({
-  blogsContainer: {
-    paddingTop: theme.spacing(3),
-  },
-  blogTitle: {
-    fontWeight: 500,
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
-    textAlign: "center"
-  },
-  blogText: {
-    fontWeight: 500,
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3),
-    textAlign: "center"
-  },
-  card: {
-    maxWidth: "100%",
-    textAlign: "justify",
-  },
-  media: {
-    height: 240,
-  },
-  mediaLab: {
-    height: 440,
-  },
-  cardActions: {
-    display: "flex",
-    margin: "0 10px",
-    justifyContent: "space-between",
-  },
-  textMylab: {
-    fontSize: "3em",
-    textAlign: "center",
-    padding: theme.spacing(5),
-  },
-  root: {
-    position: 'fixed',
-    bottom: theme.spacing(2),
-    right: theme.spacing(2),
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  navegacao: {
-    fontWeight: 'bold',
-    color: "white",
-    display: 'row',
-    float: 'left',
-    justifyContent: 'end',
-    alignItems: 'end',
-    textAlign: 'end',
-  }
+   blogText: {
+     fontWeight: 500,
+     paddingBottom: theme.spacing(3),
+     paddingTop: theme.spacing(3),
+     textAlign: "center"
+   },
+   card: {
+     maxWidth: "100%",
+     textAlign: "justify",
+   },
+   mediaLab: {
+     height: 440,
+   },
+   textMylab: {
+     fontSize: "3em",
+     textAlign: "center",
+     padding: theme.spacing(5),
+   },
+   servicos: {
+     marginLeft: theme.spacing(1),
+     width: "98%",
+   },
 }));
 
 function Servicos(props) {
   const classes = useStyles();
 
   return (
-    <div className="">
+    <div className={classes.servicos}>
       <Typography variant="h5" className={classes.blogText} >
 
       </Typography>
